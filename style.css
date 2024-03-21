@@ -1,0 +1,103 @@
+*{
+      margin: 0;
+      padding: 0;
+      font-family: "Yatra One", system-ui;
+      font-style: normal;
+      text-transform: capitalize;
+}         
+
+.card {
+      width: 100%;
+      min-height: 100vh;
+      background: rgb(195,123,34);
+      background: linear-gradient(0deg, rgba(195,123,34,1) 14%, rgba(229,42,42,0.9893207282913166) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.todo-app {
+ width: 100%;
+ max-width: 550px;
+ background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,0.40948879551820727) 0%, rgba(37,46,205,0.8352591036414566) 100%);
+ backdrop-filter: blur(10px);
+ border: 0.5px solid rgba(255,255,255,0.18);
+ box-shadow: 0px 2px 20px 0px;
+ margin: 20px;
+ padding: 40px 30px 70px;
+ border-radius: 10px;
+}
+
+.todo-app h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 35px;
+}
+
+.todo-app h2 i {
+  width: 40px;
+  margin-left: 19px;
+  margin-bottom: 5px;;
+}
+.row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: yellow;
+      border-radius: 30px;
+      padding-left: 20px;
+      margin-bottom: 30px;
+}
+input{
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      padding: 15px;
+      font-weight: 25px;
+      font-size: 15px;
+}
+button{
+      border: none;
+      outline: none;
+      padding: 15px;
+      font-size: 18px;
+      background: lightblue;
+      border-radius: 30px;
+      margin: 5px;
+      flex: 0.3;
+}
+ul li {
+      
+      font-size: 20px;
+      padding: 15px 10px 15px 30px;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      user-select: none; 
+      margin-left: 25px; 
+      position: relative;      
+}
+ul li.checked{
+      color: #acaca5d2;
+      text-decoration: line-through;
+}
+      
+ul li span {
+     position: absolute;
+     right: 0;
+     width: 40px;
+     height: 40px;
+     font-size: 20px;
+     font-weight: 900;
+     color: #fff;
+     line-height: 40px;
+     text-align: center;
+     border-radius: 50%;
+}
+ul li span:hover {
+    background: #55637e;
+}
